@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Productivity Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Productivity Dashboard</h1>
+
+    <div class="grid">
+
+        <section id="tasks">
+            <h2>Tasks</h2>
+            <div class="input-area">
+                <input id="taskInput" type="text" placeholder="Neue Aufgabe...">
+                <button id="addTaskBtn">+</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+
+        <section id="pomodoro">
+            <h2>Pomodoro</h2>
+            <div id="timer">25:00</div>
+            <div class="pomodoro-buttons">
+                <button id="startPomodoro">Start</button>
+                <button id="resetPomodoro">Reset</button>
+            </div>
+        </section>
+
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea id="notesArea" placeholder="Notizen..."></textarea>
+        </section>
+
+        <section id="weather">
+            <h2>Weather</h2>
+            <input id="cityInput" type="text" placeholder="Stadt eingeben...">
+            <button id="getWeather">OK</button>
+            <div id="weatherResult"></div>
+        </section>
+
+        <section id="theme">
+            <h2>Theme</h2>
+            <button id="toggleTheme">Dark / Light</button>
+        </section>
+
+    </div>
+
+</div>
+
+<script src="modules/tasks.js"></script>
+<script src="modules/pomodoro.js"></script>
+<script src="modules/notes.js"></script>
+<script src="modules/weather.js"></script>
+<script src="modules/theme.js"></script>
+
+</body>
+</html>
